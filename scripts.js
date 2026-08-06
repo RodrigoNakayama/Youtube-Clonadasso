@@ -13,11 +13,11 @@ var items = [
     }
 ]
 
-const Coisa = document.getElementById('container')
+const container = document.getElementById('container')
 
-const Thing = document.createElement("div")
+const div = document.createElement("div")
 
-const textin = document.createElement("h2")
+const h2 = document.createElement("h2")
 h2.textContent = "bananana"
 
-console.log(Coisa)
+container.appendChild(h2)
