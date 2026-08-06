@@ -1,23 +1,31 @@
-var items = [
+var videos = [
     {
-        title : "Super Mario World DETONADO",
-        content : "detonado do clássico jogo de super nintendo"
+        title : "Deadlock gameplay total real bro",
+        content : "eido destroys little kids in casual"
     },
     {
-        title : "Como fazer cannabis usando maizena e javascript",
-        content : "Tutorial de uma prática receita de vó"
+        title : "super caulk ball torture in infernum calamity no hit hardcore with no armor or acessories lmao xdd",
+        content : "easy thing bro, did it in 2 hours"
     },
     {
-        title : "PodCast a respeito de cálculo e matemática avançada",
-        content : "PodCast acompanhado do grande mestre Ledo Vaccaro discutindo a respeito de cálculo"
+        title : "getting literally all tier 4s of the game and destroying your mum",
+        content : "the saac gameplay at it again boys"
     }
 ]
 
 const container = document.getElementById('container')
 
-const div = document.createElement("div")
+for (let i of videos) {
+    const div = document.createElement("div")
 
-const h2 = document.createElement("h2")
-h2.textContent = "bananana"
+    const p = document.createElement("p")
+    p.textContent = i.content
 
-container.appendChild(h2)
+    const h2 = document.createElement("h2")
+    h2.textContent = i.title
+
+    div.appendChild(h2)
+    div.appendChild(p)
+
+    container.appendChild(div)
+}
